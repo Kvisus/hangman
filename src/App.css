@@ -1,0 +1,123 @@
+.main {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0 auto;
+  align-items: center;
+}
+.loose-win {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.draw-wrapper {
+  position: relative;
+}
+.bot-horizontal {
+  height: 10px;
+  width: 250px;
+  background: black;
+}
+.vertical-high {
+  height: 400px;
+  width: 10px;
+  background: black;
+  margin-left: 120px;
+}
+.top-horizon {
+  height: 10px;
+  width: 200px;
+  background: black;
+  margin-left: 120px;
+}
+.vertical-small {
+  height: 50px;
+  width: 10px;
+  background: black;
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+.head {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 10px solid black;
+  position: absolute;
+  top: 50px;
+  right: -30px;
+}
+
+.body {
+  width: 10px;
+  height: 100px;
+  background: black;
+  position: absolute;
+  top: 120px;
+  right: 0;
+}
+
+.arm {
+  width: 100px;
+  height: 10px;
+  position: absolute;
+  background: black;
+
+  top: 150px;
+}
+.arm.left {
+  rotate: 30deg;
+  transform-origin: right bottom;
+  right: 10px;
+}
+
+.arm.right {
+  rotate: -30deg;
+  transform-origin: left bottom;
+  right: -100px;
+}
+
+.leg {
+  width: 100px;
+  height: 10px;
+  position: absolute;
+  background: black;
+  top: 210px;
+}
+.leg.left {
+  rotate: -60deg;
+  transform-origin: right bottom;
+  right: 0;
+}
+.leg.right {
+  right: -90px;
+  rotate: 60deg;
+  transform-origin: left bottom;
+}
+
+.word-container {
+  display: flex;
+  gap: 0.25em;
+  font-size: 6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: monospace;
+}
+
+.letter-container {
+  border-bottom: 0.1em solid black;
+}
+
+.hidden {
+  visibility: hidden;
+}
+.visible {
+  visibility: visible;
+}
+.keyboard{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(75px,1fr));
+  gap: 0.5rem;
+  align-self: stretch;
+}
